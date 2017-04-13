@@ -103,6 +103,9 @@ static NSString * const INDJavascriptPOCJSVariableCellIdentifier = @"Cell";
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Functions" message:@"Choose a function" preferredStyle:UIAlertControllerStyleActionSheet];
     __weak typeof(self) weakSelf = self;
     [alert addAction:[UIAlertAction actionWithTitle:@"Addition" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Not implemented yet" message:@"Soon" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [weakSelf presentViewController:alert animated:YES completion:nil];
     }]];
     [self presentViewController:alert animated:YES completion:nil];
 }
