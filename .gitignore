@@ -94,6 +94,4 @@ iOSInjectionProject/
 .idea/
 JavascriptCorePOC.xcodeproj/xcuserdata/tmolnar.xcuserdatad/xcdebugger/
 JavascriptCorePOC.xcworkspace/
-Podfile
-Podfile.lock
 Pods/
