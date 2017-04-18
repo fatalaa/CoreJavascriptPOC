@@ -74,6 +74,7 @@
 {
     // TODO register stored functions as well
     JSValue *value = [self.javascriptContext evaluateScript:functionBody];
+    NSLog(@"%@", value); //This will be undefined
 }
 
 - (NSDictionary<NSString *, INDJSTypeDescriptor *> *)allVariables
