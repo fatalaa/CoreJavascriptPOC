@@ -16,5 +16,6 @@
 - (void)addDoubleWithName:(NSString *)variableName value:(NSNumber *)value;
 - (void)addFunctionWithName:(NSString *)name functionBody:(NSString *)functionBody;
 - (NSDictionary<NSString *,INDJSTypeDescriptor *> *)allVariables;
+- (NSArray<NSString *> *)functionNames;
 
 @end

@@ -14,6 +14,7 @@
 @interface INDDefaultJSContext ()
 
 @property (nonatomic, strong) NSMutableArray<INDJSTypeDescriptor *> *variables;
+@property (nonatomic, strong) NSMutableArray<NSString *> *functions;
 @property (nonatomic, strong) JSContext *javascriptContext;
 
 @end
@@ -25,6 +26,7 @@
     if (self = [super init])
     {
         _variables = [NSMutableArray array];
+        _functions = [NSMutableArray array];
         _javascriptContext = [JSContext new];
     }
     return self;
@@ -72,9 +74,8 @@
 
 - (void)addFunctionWithName:(NSString *)name functionBody:(NSString *)functionBody
 {
-    // TODO register stored functions as well
-    JSValue *value = [self.javascriptContext evaluateScript:functionBody];
-    NSLog(@"%@", value); //This will be undefined
+    [self.functions addObject:name];
+    [self.javascriptContext evaluateScript:functionBody];
 }
 
 - (NSDictionary<NSString *, INDJSTypeDescriptor *> *)allVariables
@@ -88,6 +89,11 @@
         }
     }];
     return [variables copy];
+}
+
+- (NSArray<NSString *> *)functionNames
+{
+    return [self.functions copy];
 }
 
 @end
