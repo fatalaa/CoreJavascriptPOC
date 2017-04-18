@@ -70,6 +70,12 @@
     }
 }
 
+- (void)addFunctionWithName:(NSString *)name functionBody:(NSString *)functionBody
+{
+    // TODO register stored functions as well
+    JSValue *value = [self.javascriptContext evaluateScript:functionBody];
+}
+
 - (NSDictionary<NSString *, INDJSTypeDescriptor *> *)allVariables
 {
     NSMutableDictionary<NSString *, INDJSTypeDescriptor *> *variables = [NSMutableDictionary dictionary];

@@ -12,6 +12,8 @@
 #import "ListVariablesViewController.h"
 #import "INDJSTypeDescriptor.h"
 
+#import <libextobjc/extobjc.h>
+
 static NSString * const INDJavascriptPOCJSVariableCellIdentifier = @"Cell";
 
 @interface ListVariablesViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -101,11 +103,19 @@ static NSString * const INDJavascriptPOCJSVariableCellIdentifier = @"Cell";
 - (void)showFunctions
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Functions" message:@"Choose a function" preferredStyle:UIAlertControllerStyleActionSheet];
-    __weak typeof(self) weakSelf = self;
+    @weakify(self);
     [alert addAction:[UIAlertAction actionWithTitle:@"Addition" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Not implemented yet" message:@"Soon" preferredStyle:UIAlertControllerStyleAlert];
-        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-        [weakSelf presentViewController:alert animated:YES completion:nil];
+        @strongify(self);
+        NSString *filepath = [[NSBundle mainBundle] pathForResource:@"add" ofType:@"js"];
+        NSError *error;
+        NSString *fileContents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
+
+        if (error)
+        {
+            NSLog(@"Error reading file: %@", error.localizedDescription);
+        }
+        NSLog(@"contents: %@", fileContents);
+        [self.context addFunctionWithName:@"add" functionBody:fileContents];
     }]];
     [self presentViewController:alert animated:YES completion:nil];
 }

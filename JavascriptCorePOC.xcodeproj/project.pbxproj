@@ -15,6 +15,7 @@
 		BB61FF651E9BB575000514FA /* ListVariablesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61FF641E9BB574000514FA /* ListVariablesViewController.m */; };
 		BB61FF6A1E9BB575000514FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61FF691E9BB575000514FA /* Assets.xcassets */; };
 		BB61FF6D1E9BB575000514FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB61FF6B1E9BB575000514FA /* LaunchScreen.storyboard */; };
+		BB786BAB1EA604CB001D6680 /* add.js in Resources */ = {isa = PBXBuildFile; fileRef = B8A209834F25CC7B9224CA28 /* add.js */; };
 		BBCAD2981E9BDC7B0051CEDE /* INDDefaultJSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAD2971E9BDC7B0051CEDE /* INDDefaultJSContext.m */; };
 		BBCAD29D1E9CEE770051CEDE /* VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAD29C1E9CEE770051CEDE /* VariableCell.m */; };
 		BBCAD2AB1E9D2AFC0051CEDE /* AddVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAD2A91E9D2AFC0051CEDE /* AddVariableViewController.m */; };
@@ -211,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB786BAB1EA604CB001D6680 /* add.js in Resources */,
 				BB61FF6D1E9BB575000514FA /* LaunchScreen.storyboard in Resources */,
 				BB61FF6A1E9BB575000514FA /* Assets.xcassets in Resources */,
 			);

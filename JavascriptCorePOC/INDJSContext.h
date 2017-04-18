@@ -14,6 +14,7 @@
 - (void)addBoolWithName:(NSString *)variableName value:(NSNumber *)value;
 - (void)addIntegerWithName:(NSString *)variableName value:(NSNumber *)value;
 - (void)addDoubleWithName:(NSString *)variableName value:(NSNumber *)value;
+- (void)addFunctionWithName:(NSString *)name functionBody:(NSString *)functionBody;
 - (NSDictionary<NSString *,INDJSTypeDescriptor *> *)allVariables;
 
 @end
