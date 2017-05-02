@@ -94,7 +94,7 @@ static NSString * const INDJavascriptPOCJSVariableCellIdentifier = @"Cell";
         }
         else
         {
-            cell.varNameLabel.text = [self.context functionNames][indexPath.row];
+            cell.varNameLabel.text = [self.context functionNames][(NSUInteger) indexPath.row];
             cell.varTypeLabel.text = @"function";
         }
     }
@@ -154,6 +154,11 @@ static NSString * const INDJavascriptPOCJSVariableCellIdentifier = @"Cell";
     [alert addAction:[UIAlertAction actionWithTitle:@"Addition" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         @strongify(self);
         [self loadFunctionWithName:@"add"];
+        [self.tableView reloadData];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Subtraction" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        @strongify(self);
+        [self loadFunctionWithName:@"subtract"];
         [self.tableView reloadData];
     }]];
     [self presentViewController:alert animated:YES completion:nil];

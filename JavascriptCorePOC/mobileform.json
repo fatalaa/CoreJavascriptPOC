@@ -1,0 +1,108 @@
+{
+  "success": false,
+  "failure": false,
+  "data":
+  {
+    "sections":
+    [
+      {
+        "properties":
+        {
+          "key": "section1",
+          "title": "Section 1"
+        },
+        "fieldGroup": [
+          {
+            "type": "text",
+            "key": "section1.baseValue",
+            "properties":
+            {
+              "label": "Base value:",
+              "placeholder": "Enter base value",
+              "value": "x"
+            },
+            "constraints":
+            {
+              "required":
+              {
+                "value": true,
+                "message": "This field is mandatory."
+              },
+              "regexp":
+              {
+                "value": "[AB]",
+                "message": "You can choose either A or B."
+              }
+            },
+            "messages":
+            {
+              "errors":
+              [
+                {
+                  "code": "pegasus.component.resource:SimpleStringValueResource",
+                  "title": "Marked invalid by administrator"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "properties":
+        {
+          "key": "section2",
+          "title": "Section 2"
+        },
+        "fieldGroup":
+        [
+          {
+            "type": "text",
+            "key": "section2.dynamicReadonly",
+            "properties":
+            {
+              "label": "Dynamic Readonly",
+              "placeholder": "This field becomes readonly if the base value is equal to \"x\"",
+              "readonly": "${model.section1.baseValue === \"x\"}"
+            }
+          },
+          {
+            "type": "text",
+            "key": "section2.dynamicDisabled",
+            "properties":
+            {
+              "label": "Dynamic Disabled",
+              "placeholder": "This field becomes disabled if the base value is equal to \"y\"",
+              "disabled": "${model.baseValue === \"y\"}"
+            }
+          },
+          {
+            "type": "text",
+            "key": "section2.sub.sub.dynamicHidden",
+            "properties":
+            {
+              "label": "Dynamic Hidden",
+              "placeholder": "This field becomes hidden if the base value is equal to \"z\". (Model is removed, too.)",
+              "hide": "${model.baseValue === \"z\"}"
+            }
+          },
+          {
+            "type": "text",
+            "key": "section2.dynamicRequired",
+            "properties":
+            {
+              "label": "Dynamic Required",
+              "placeholder": "This field becomes required if the base value is equal to \"w\""
+            },
+            "constraints":
+            {
+              "required":
+              {
+                "value": "${model.baseValue === \"w\"}"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

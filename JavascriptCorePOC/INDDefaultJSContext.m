@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) NSMutableArray<INDJSTypeDescriptor *> *variables;
 @property (nonatomic, strong) NSMutableArray<NSString *> *functions;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, NSString *> *expressions;
 @property (nonatomic, strong) JSContext *javascriptContext;
 
 @end
@@ -27,7 +28,13 @@
     {
         _variables = [NSMutableArray array];
         _functions = [NSMutableArray array];
+        _expressions = [NSMutableDictionary dictionary];
         _javascriptContext = [JSContext new];
+        NSString *evalScript = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"evaluator" ofType:@"js"] encoding:NSUTF8StringEncoding error:nil];
+        _javascriptContext.exceptionHandler = ^(JSContext *context, JSValue *exception) {
+            NSLog(@"%@", exception);
+        };
+        [_javascriptContext evaluateScript:evalScript];
     }
     return self;
 }
@@ -78,6 +85,14 @@
     [self.javascriptContext evaluateScript:functionBody];
 }
 
+- (void)addExpressionWithName:(NSString *)name expressionBody:(NSString *)expressionBody
+{
+    if (!self.expressions[name])
+    {
+        self.expressions[name] = expressionBody;
+    }
+}
+
 - (NSDictionary<NSString *, INDJSTypeDescriptor *> *)allVariables
 {
     NSMutableDictionary<NSString *, INDJSTypeDescriptor *> *variables = [NSMutableDictionary dictionary];
@@ -95,5 +110,17 @@
 {
     return [self.functions copy];
 }
+
+- (void)embedObject:(id)obj
+{
+    JSValue *value = [JSValue valueWithObject:obj inContext:self.javascriptContext];
+    NSLog(@"%@", [value toObject]);
+}
+
+- (JSValue *)evalueExpression:(NSString *)expression
+{
+    return [self.javascriptContext evaluateScript:expression];
+}
+
 
 @end

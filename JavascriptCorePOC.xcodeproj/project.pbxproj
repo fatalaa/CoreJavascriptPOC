@@ -8,8 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4344357438CC5FFF7E8CC51E /* libPods-JavascriptCorePOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875B2258D504DCF69ACA3DFA /* libPods-JavascriptCorePOC.a */; };
+		53732FECF164B8B397A45FC8 /* libPods-DynamicExpressionEvaluator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25251D146FEB11DD9B83953B /* libPods-DynamicExpressionEvaluator.a */; };
+		B8A20118EC8D194D1BC2F980 /* INDExpressionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A20818EEE47F677EA40DFB /* INDExpressionEvaluator.m */; };
+		B8A2026A909E3F6CD478CBD3 /* INDDefaultEvaluationModelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A200C9CD6B1EC6ADAB191F /* INDDefaultEvaluationModelHandler.m */; };
+		B8A20429C1FC71E140EA0588 /* INDKeyPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A20F4DC2FF1456AF4CEA34 /* INDKeyPathParser.m */; };
+		B8A2047E7C20BCCDDABBCDE8 /* mobileform.json in Resources */ = {isa = PBXBuildFile; fileRef = B8A20C6F97F78ABCD8CD9C78 /* mobileform.json */; };
 		B8A2053DE57250840943FD1D /* INDJSTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A20236327A2A6D48458A0E /* INDJSTypeDescriptor.m */; };
-		B8A20EAF5D56C5FAA810ADC3 /* add.js in Sources */ = {isa = PBXBuildFile; fileRef = B8A209834F25CC7B9224CA28 /* add.js */; };
+		B8A206336B381DF197B5E8A0 /* inputValues.js in Resources */ = {isa = PBXBuildFile; fileRef = B8A2010B3755F06D00FFCD02 /* inputValues.js */; };
+		B8A20936EB95CE6D7346DAAB /* EvaluationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A20EC0B16034EB598E589C /* EvaluationModel.m */; };
+		B8A20C430056A5EFEDEB4E99 /* INDExpressionValueInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A20D580759B1E4FEE80DD6 /* INDExpressionValueInjector.m */; };
+		B8A20E49E192F1F02514A26F /* subtract.js in Resources */ = {isa = PBXBuildFile; fileRef = B8A204AC4C74EF013BD8B365 /* subtract.js */; };
+		B8A20F1A84C1C663E5FEE72B /* NSMutableDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A2095C3B971A975CF23742 /* NSMutableDictionary+Merge.m */; };
+		B8A20F6CB073195C660CA72E /* INDExpressionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A2031EB9ECD1B4FDB544A2 /* INDExpressionItem.m */; };
+		BB2177D51EAE4ADD00DE0C1C /* evaluator.js in Resources */ = {isa = PBXBuildFile; fileRef = BB2177D41EAE4ADD00DE0C1C /* evaluator.js */; };
+		BB5DAE631EA66B0A001BFD7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DAE621EA66B0A001BFD7E /* main.m */; };
+		BB5DAE661EA66B0A001BFD7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DAE651EA66B0A001BFD7E /* AppDelegate.m */; };
+		BB5DAE691EA66B0A001BFD7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DAE681EA66B0A001BFD7E /* ViewController.m */; };
+		BB5DAE6E1EA66B0A001BFD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5DAE6D1EA66B0A001BFD7E /* Assets.xcassets */; };
+		BB5DAE711EA66B0A001BFD7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5DAE6F1EA66B0A001BFD7E /* LaunchScreen.storyboard */; };
+		BB5DAE7C1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DAE7B1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.m */; };
+		BB5DAE871EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DAE861EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.m */; };
 		BB61FF5F1E9BB574000514FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61FF5E1E9BB574000514FA /* main.m */; };
 		BB61FF621E9BB574000514FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61FF611E9BB574000514FA /* AppDelegate.m */; };
 		BB61FF651E9BB575000514FA /* ListVariablesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61FF641E9BB574000514FA /* ListVariablesViewController.m */; };
@@ -21,13 +39,69 @@
 		BBCAD2AB1E9D2AFC0051CEDE /* AddVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCAD2A91E9D2AFC0051CEDE /* AddVariableViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB5DAE781EA66B0A001BFD7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB61FF521E9BB574000514FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5DAE5E1EA66B0A001BFD7E;
+			remoteInfo = DynamicExpressionEvaluator;
+		};
+		BB5DAE831EA66B0B001BFD7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB61FF521E9BB574000514FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5DAE5E1EA66B0A001BFD7E;
+			remoteInfo = DynamicExpressionEvaluator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0802476BD3621BE72503DB1E /* Pods-JavascriptCorePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavascriptCorePOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavascriptCorePOC/Pods-JavascriptCorePOC.release.xcconfig"; sourceTree = "<group>"; };
 		1ED75B15E654733E36F0818D /* Pods-JavascriptCorePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavascriptCorePOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JavascriptCorePOC/Pods-JavascriptCorePOC.debug.xcconfig"; sourceTree = "<group>"; };
+		25251D146FEB11DD9B83953B /* libPods-DynamicExpressionEvaluator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DynamicExpressionEvaluator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6798E4FB32808A7FB52EF525 /* Pods-DynamicExpressionEvaluator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicExpressionEvaluator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicExpressionEvaluator/Pods-DynamicExpressionEvaluator.debug.xcconfig"; sourceTree = "<group>"; };
 		875B2258D504DCF69ACA3DFA /* libPods-JavascriptCorePOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JavascriptCorePOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C057B89835B88170B453D33 /* Pods-DynamicExpressionEvaluator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicExpressionEvaluator.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicExpressionEvaluator/Pods-DynamicExpressionEvaluator.release.xcconfig"; sourceTree = "<group>"; };
+		B8A20039C5843D1D7238139C /* INDExpressionValueInjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDExpressionValueInjection.h; sourceTree = "<group>"; };
+		B8A200C9CD6B1EC6ADAB191F /* INDDefaultEvaluationModelHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDDefaultEvaluationModelHandler.m; sourceTree = "<group>"; };
+		B8A200DD7F51A9A239A1C9C7 /* INDExpressionEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDExpressionEvaluator.h; sourceTree = "<group>"; };
+		B8A2010B3755F06D00FFCD02 /* inputValues.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = inputValues.js; sourceTree = "<group>"; };
 		B8A20236327A2A6D48458A0E /* INDJSTypeDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDJSTypeDescriptor.m; sourceTree = "<group>"; };
+		B8A20313E3EFB659B495A5B0 /* INDKeyPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDKeyPathParser.h; sourceTree = "<group>"; };
+		B8A2031EB9ECD1B4FDB544A2 /* INDExpressionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDExpressionItem.m; sourceTree = "<group>"; };
+		B8A203DC006439D0AA7D6B06 /* EvaluationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluationModel.h; sourceTree = "<group>"; };
+		B8A2047B47AFDB95E5AD0CC4 /* INDDefaultEvaluationModelHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDDefaultEvaluationModelHandler.h; sourceTree = "<group>"; };
+		B8A204AC4C74EF013BD8B365 /* subtract.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = subtract.js; sourceTree = "<group>"; };
+		B8A20643AB89613F5032AFB6 /* INDExpressionEvaluating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDExpressionEvaluating.h; sourceTree = "<group>"; };
+		B8A20818EEE47F677EA40DFB /* INDExpressionEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDExpressionEvaluator.m; sourceTree = "<group>"; };
+		B8A208933E874DD0F8838F63 /* INDExpressionValueInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDExpressionValueInjector.h; sourceTree = "<group>"; };
+		B8A209313E1D38B112A47677 /* INDEvaluationModelHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDEvaluationModelHandling.h; sourceTree = "<group>"; };
+		B8A2095C3B971A975CF23742 /* NSMutableDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Merge.m"; sourceTree = "<group>"; };
 		B8A209834F25CC7B9224CA28 /* add.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = add.js; sourceTree = "<group>"; };
+		B8A20C6F97F78ABCD8CD9C78 /* mobileform.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mobileform.json; sourceTree = "<group>"; };
 		B8A20CB29A533E9A5F7AF711 /* INDJSTypeDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDJSTypeDescriptor.h; sourceTree = "<group>"; };
+		B8A20D580759B1E4FEE80DD6 /* INDExpressionValueInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDExpressionValueInjector.m; sourceTree = "<group>"; };
+		B8A20DB260B4196EA20222AA /* INDExpressionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDExpressionItem.h; sourceTree = "<group>"; };
+		B8A20EC0B16034EB598E589C /* EvaluationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluationModel.m; sourceTree = "<group>"; };
+		B8A20EC4A5F54E11B24E1EE8 /* NSMutableDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Merge.h"; sourceTree = "<group>"; };
+		B8A20F4DC2FF1456AF4CEA34 /* INDKeyPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDKeyPathParser.m; sourceTree = "<group>"; };
+		BB2177D41EAE4ADD00DE0C1C /* evaluator.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = evaluator.js; sourceTree = "<group>"; };
+		BB5DAE5F1EA66B0A001BFD7E /* DynamicExpressionEvaluator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicExpressionEvaluator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5DAE621EA66B0A001BFD7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB5DAE641EA66B0A001BFD7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB5DAE651EA66B0A001BFD7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB5DAE671EA66B0A001BFD7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB5DAE681EA66B0A001BFD7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB5DAE6D1EA66B0A001BFD7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB5DAE701EA66B0A001BFD7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB5DAE721EA66B0A001BFD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5DAE771EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicExpressionEvaluatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5DAE7B1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicExpressionEvaluatorTests.m; sourceTree = "<group>"; };
+		BB5DAE7D1EA66B0A001BFD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5DAE821EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicExpressionEvaluatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5DAE861EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicExpressionEvaluatorUITests.m; sourceTree = "<group>"; };
+		BB5DAE881EA66B0B001BFD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB61FF5A1E9BB574000514FA /* JavascriptCorePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavascriptCorePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB61FF5E1E9BB574000514FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB61FF601E9BB574000514FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +121,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB5DAE5C1EA66B0A001BFD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53732FECF164B8B397A45FC8 /* libPods-DynamicExpressionEvaluator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE741EA66B0A001BFD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE7F1EA66B0B001BFD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB61FF571E9BB574000514FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +159,8 @@
 			children = (
 				1ED75B15E654733E36F0818D /* Pods-JavascriptCorePOC.debug.xcconfig */,
 				0802476BD3621BE72503DB1E /* Pods-JavascriptCorePOC.release.xcconfig */,
+				6798E4FB32808A7FB52EF525 /* Pods-DynamicExpressionEvaluator.debug.xcconfig */,
+				9C057B89835B88170B453D33 /* Pods-DynamicExpressionEvaluator.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -71,14 +169,90 @@
 			isa = PBXGroup;
 			children = (
 				875B2258D504DCF69ACA3DFA /* libPods-JavascriptCorePOC.a */,
+				25251D146FEB11DD9B83953B /* libPods-DynamicExpressionEvaluator.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8A20C7EBAEBEBCCFB08CAEC /* INDExpressionEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				B8A20643AB89613F5032AFB6 /* INDExpressionEvaluating.h */,
+				B8A20818EEE47F677EA40DFB /* INDExpressionEvaluator.m */,
+				B8A200DD7F51A9A239A1C9C7 /* INDExpressionEvaluator.h */,
+				B8A209313E1D38B112A47677 /* INDEvaluationModelHandling.h */,
+				B8A200C9CD6B1EC6ADAB191F /* INDDefaultEvaluationModelHandler.m */,
+				B8A2047B47AFDB95E5AD0CC4 /* INDDefaultEvaluationModelHandler.h */,
+				B8A20EC0B16034EB598E589C /* EvaluationModel.m */,
+				B8A203DC006439D0AA7D6B06 /* EvaluationModel.h */,
+				B8A2031EB9ECD1B4FDB544A2 /* INDExpressionItem.m */,
+				B8A20DB260B4196EA20222AA /* INDExpressionItem.h */,
+				B8A20F4DC2FF1456AF4CEA34 /* INDKeyPathParser.m */,
+				B8A20313E3EFB659B495A5B0 /* INDKeyPathParser.h */,
+				B8A20039C5843D1D7238139C /* INDExpressionValueInjection.h */,
+				B8A20D580759B1E4FEE80DD6 /* INDExpressionValueInjector.m */,
+				B8A208933E874DD0F8838F63 /* INDExpressionValueInjector.h */,
+			);
+			name = INDExpressionEvaluator;
+			sourceTree = "<group>";
+		};
+		B8A20C985FD7AD45D2552BF8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2095C3B971A975CF23742 /* NSMutableDictionary+Merge.m */,
+				B8A20EC4A5F54E11B24E1EE8 /* NSMutableDictionary+Merge.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		BB5DAE601EA66B0A001BFD7E /* DynamicExpressionEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DAE641EA66B0A001BFD7E /* AppDelegate.h */,
+				BB5DAE651EA66B0A001BFD7E /* AppDelegate.m */,
+				BB5DAE671EA66B0A001BFD7E /* ViewController.h */,
+				BB5DAE681EA66B0A001BFD7E /* ViewController.m */,
+				BB5DAE6D1EA66B0A001BFD7E /* Assets.xcassets */,
+				BB5DAE6F1EA66B0A001BFD7E /* LaunchScreen.storyboard */,
+				BB5DAE721EA66B0A001BFD7E /* Info.plist */,
+				BB5DAE611EA66B0A001BFD7E /* Supporting Files */,
+			);
+			path = DynamicExpressionEvaluator;
+			sourceTree = "<group>";
+		};
+		BB5DAE611EA66B0A001BFD7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DAE621EA66B0A001BFD7E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5DAE7A1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DAE7B1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.m */,
+				BB5DAE7D1EA66B0A001BFD7E /* Info.plist */,
+			);
+			path = DynamicExpressionEvaluatorTests;
+			sourceTree = "<group>";
+		};
+		BB5DAE851EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DAE861EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.m */,
+				BB5DAE881EA66B0B001BFD7E /* Info.plist */,
+			);
+			path = DynamicExpressionEvaluatorUITests;
 			sourceTree = "<group>";
 		};
 		BB61FF511E9BB574000514FA = {
 			isa = PBXGroup;
 			children = (
 				BB61FF5C1E9BB574000514FA /* JavascriptCorePOC */,
+				BB5DAE601EA66B0A001BFD7E /* DynamicExpressionEvaluator */,
+				BB5DAE7A1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests */,
+				BB5DAE851EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests */,
 				BB61FF5B1E9BB574000514FA /* Products */,
 				87490B0549BA7C3C9659B2B1 /* Pods */,
 				8846B61D00101F63F0DE66E8 /* Frameworks */,
@@ -89,6 +263,9 @@
 			isa = PBXGroup;
 			children = (
 				BB61FF5A1E9BB574000514FA /* JavascriptCorePOC.app */,
+				BB5DAE5F1EA66B0A001BFD7E /* DynamicExpressionEvaluator.app */,
+				BB5DAE771EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.xctest */,
+				BB5DAE821EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +282,8 @@
 				BB61FF6B1E9BB575000514FA /* LaunchScreen.storyboard */,
 				BB61FF6E1E9BB575000514FA /* Info.plist */,
 				BB61FF5D1E9BB574000514FA /* Supporting Files */,
+				B8A20C985FD7AD45D2552BF8 /* Util */,
+				B8A20C7EBAEBEBCCFB08CAEC /* INDExpressionEvaluator */,
 			);
 			path = JavascriptCorePOC;
 			sourceTree = "<group>";
@@ -114,6 +293,10 @@
 			children = (
 				BB61FF5E1E9BB574000514FA /* main.m */,
 				B8A209834F25CC7B9224CA28 /* add.js */,
+				B8A204AC4C74EF013BD8B365 /* subtract.js */,
+				B8A20C6F97F78ABCD8CD9C78 /* mobileform.json */,
+				B8A2010B3755F06D00FFCD02 /* inputValues.js */,
+				BB2177D41EAE4ADD00DE0C1C /* evaluator.js */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +336,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB5DAE5E1EA66B0A001BFD7E /* DynamicExpressionEvaluator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5DAE8F1EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluator" */;
+			buildPhases = (
+				BF9D756D99DAA965F46094C8 /* [CP] Check Pods Manifest.lock */,
+				BB5DAE5B1EA66B0A001BFD7E /* Sources */,
+				BB5DAE5C1EA66B0A001BFD7E /* Frameworks */,
+				BB5DAE5D1EA66B0A001BFD7E /* Resources */,
+				2918A91F55F97401D35382C0 /* [CP] Embed Pods Frameworks */,
+				532AF60F131D0E7A7FA086DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicExpressionEvaluator;
+			productName = DynamicExpressionEvaluator;
+			productReference = BB5DAE5F1EA66B0A001BFD7E /* DynamicExpressionEvaluator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5DAE761EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5DAE901EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluatorTests" */;
+			buildPhases = (
+				BB5DAE731EA66B0A001BFD7E /* Sources */,
+				BB5DAE741EA66B0A001BFD7E /* Frameworks */,
+				BB5DAE751EA66B0A001BFD7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5DAE791EA66B0A001BFD7E /* PBXTargetDependency */,
+			);
+			name = DynamicExpressionEvaluatorTests;
+			productName = DynamicExpressionEvaluatorTests;
+			productReference = BB5DAE771EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB5DAE811EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5DAE911EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluatorUITests" */;
+			buildPhases = (
+				BB5DAE7E1EA66B0B001BFD7E /* Sources */,
+				BB5DAE7F1EA66B0B001BFD7E /* Frameworks */,
+				BB5DAE801EA66B0B001BFD7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5DAE841EA66B0B001BFD7E /* PBXTargetDependency */,
+			);
+			name = DynamicExpressionEvaluatorUITests;
+			productName = DynamicExpressionEvaluatorUITests;
+			productReference = BB5DAE821EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BB61FF591E9BB574000514FA /* JavascriptCorePOC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB61FF711E9BB575000514FA /* Build configuration list for PBXNativeTarget "JavascriptCorePOC" */;
@@ -182,6 +421,23 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Tibor Molnar";
 				TargetAttributes = {
+					BB5DAE5E1EA66B0A001BFD7E = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = D7H64P2565;
+						ProvisioningStyle = Automatic;
+					};
+					BB5DAE761EA66B0A001BFD7E = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = D7H64P2565;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB5DAE5E1EA66B0A001BFD7E;
+					};
+					BB5DAE811EA66B0B001BFD7E = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = D7H64P2565;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB5DAE5E1EA66B0A001BFD7E;
+					};
 					BB61FF591E9BB574000514FA = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = QH39E7L5FF;
@@ -203,24 +459,84 @@
 			projectRoot = "";
 			targets = (
 				BB61FF591E9BB574000514FA /* JavascriptCorePOC */,
+				BB5DAE5E1EA66B0A001BFD7E /* DynamicExpressionEvaluator */,
+				BB5DAE761EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests */,
+				BB5DAE811EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB5DAE5D1EA66B0A001BFD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5DAE711EA66B0A001BFD7E /* LaunchScreen.storyboard in Resources */,
+				BB5DAE6E1EA66B0A001BFD7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE751EA66B0A001BFD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE801EA66B0B001BFD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB61FF581E9BB574000514FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB786BAB1EA604CB001D6680 /* add.js in Resources */,
 				BB61FF6D1E9BB575000514FA /* LaunchScreen.storyboard in Resources */,
+				B8A20E49E192F1F02514A26F /* subtract.js in Resources */,
+				BB786BAB1EA604CB001D6680 /* add.js in Resources */,
+				B8A206336B381DF197B5E8A0 /* inputValues.js in Resources */,
 				BB61FF6A1E9BB575000514FA /* Assets.xcassets in Resources */,
+				BB2177D51EAE4ADD00DE0C1C /* evaluator.js in Resources */,
+				B8A2047E7C20BCCDDABBCDE8 /* mobileform.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2918A91F55F97401D35382C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicExpressionEvaluator/Pods-DynamicExpressionEvaluator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		532AF60F131D0E7A7FA086DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicExpressionEvaluator/Pods-DynamicExpressionEvaluator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B25E59DA5D0F8959CB67F3C8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +550,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JavascriptCorePOC/Pods-JavascriptCorePOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF9D756D99DAA965F46094C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D4C5C724A57524F05AFACF2A /* [CP] Check Pods Manifest.lock */ = {
@@ -269,6 +600,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB5DAE5B1EA66B0A001BFD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5DAE691EA66B0A001BFD7E /* ViewController.m in Sources */,
+				BB5DAE661EA66B0A001BFD7E /* AppDelegate.m in Sources */,
+				BB5DAE631EA66B0A001BFD7E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE731EA66B0A001BFD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5DAE7C1EA66B0A001BFD7E /* DynamicExpressionEvaluatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5DAE7E1EA66B0B001BFD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5DAE871EA66B0B001BFD7E /* DynamicExpressionEvaluatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB61FF561E9BB574000514FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,13 +637,40 @@
 				BBCAD29D1E9CEE770051CEDE /* VariableCell.m in Sources */,
 				BB61FF5F1E9BB574000514FA /* main.m in Sources */,
 				B8A2053DE57250840943FD1D /* INDJSTypeDescriptor.m in Sources */,
-				B8A20EAF5D56C5FAA810ADC3 /* add.js in Sources */,
+				B8A20F1A84C1C663E5FEE72B /* NSMutableDictionary+Merge.m in Sources */,
+				B8A20118EC8D194D1BC2F980 /* INDExpressionEvaluator.m in Sources */,
+				B8A2026A909E3F6CD478CBD3 /* INDDefaultEvaluationModelHandler.m in Sources */,
+				B8A20936EB95CE6D7346DAAB /* EvaluationModel.m in Sources */,
+				B8A20F6CB073195C660CA72E /* INDExpressionItem.m in Sources */,
+				B8A20429C1FC71E140EA0588 /* INDKeyPathParser.m in Sources */,
+				B8A20C430056A5EFEDEB4E99 /* INDExpressionValueInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB5DAE791EA66B0A001BFD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5DAE5E1EA66B0A001BFD7E /* DynamicExpressionEvaluator */;
+			targetProxy = BB5DAE781EA66B0A001BFD7E /* PBXContainerItemProxy */;
+		};
+		BB5DAE841EA66B0B001BFD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5DAE5E1EA66B0A001BFD7E /* DynamicExpressionEvaluator */;
+			targetProxy = BB5DAE831EA66B0B001BFD7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		BB5DAE6F1EA66B0A001BFD7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5DAE701EA66B0A001BFD7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		BB61FF6B1E9BB575000514FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,6 +682,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BB5DAE891EA66B0B001BFD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6798E4FB32808A7FB52EF525 /* Pods-DynamicExpressionEvaluator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB5DAE8A1EA66B0B001BFD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C057B89835B88170B453D33 /* Pods-DynamicExpressionEvaluator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB5DAE8B1EA66B0B001BFD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicExpressionEvaluator.app/DynamicExpressionEvaluator";
+			};
+			name = Debug;
+		};
+		BB5DAE8C1EA66B0B001BFD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicExpressionEvaluator.app/DynamicExpressionEvaluator";
+			};
+			name = Release;
+		};
+		BB5DAE8D1EA66B0B001BFD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DynamicExpressionEvaluator;
+			};
+			name = Debug;
+		};
+		BB5DAE8E1EA66B0B001BFD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D7H64P2565;
+				INFOPLIST_FILE = DynamicExpressionEvaluatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misys.DynamicExpressionEvaluatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DynamicExpressionEvaluator;
+			};
+			name = Release;
+		};
 		BB61FF6F1E9BB575000514FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,6 +885,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB5DAE8F1EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5DAE891EA66B0B001BFD7E /* Debug */,
+				BB5DAE8A1EA66B0B001BFD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5DAE901EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5DAE8B1EA66B0B001BFD7E /* Debug */,
+				BB5DAE8C1EA66B0B001BFD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5DAE911EA66B0B001BFD7E /* Build configuration list for PBXNativeTarget "DynamicExpressionEvaluatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5DAE8D1EA66B0B001BFD7E /* Debug */,
+				BB5DAE8E1EA66B0B001BFD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB61FF551E9BB574000514FA /* Build configuration list for PBXProject "JavascriptCorePOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
